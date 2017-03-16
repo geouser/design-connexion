@@ -1,0 +1,64 @@
+.services {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.services-box {
+    width: 1480px;
+    max-width: 100%;
+    @include flex($alignI:flex-start);
+    padding: 0 10px;
+
+    .service {
+        width: 20%;
+        padding: 0 5px;
+        color: #fff;
+        text-align: center;
+
+        figure {
+            width: 100px;
+            height: 90px;
+            margin: 0;
+            padding: 0;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: 10px;
+
+            img {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+                margin: 0 auto;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+
+        h3 {
+            height: 50px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            @extend %vertAlign;
+            margin-bottom: 10px;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 95%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: #cacaca;
+            font-weight: 600;
+        }
+    }
+}

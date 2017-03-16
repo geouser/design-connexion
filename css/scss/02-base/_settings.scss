@@ -1,0 +1,94 @@
+
+// TYPOGRAPHIC
+// ---------------------------
+html,
+body {
+	height: 100%;
+  font-family: "Segoe UI";
+  color: #121212;
+}
+
+.section-title {
+  padding: 83px 0 88px;
+
+  &.white {
+    h2 {
+      color: #fff;
+    }
+  }
+
+  h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+section {
+  padding-bottom: 90px;
+}
+
+
+// lAYOUT
+// ---------------------------
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+  padding: 0 10px;
+	text-align: center;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+.flex-row {
+    @include flex($alignI: flex-start, $justify: flex-start);
+    margin: 0 -10px;
+
+    &.flex-row-middle {
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+[class*='col-'] {
+    padding: 0 10px;
+}
+
+.col-1  { width: 8.33%; }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+
+
+/* Set default opacity for input's placeholders equal to 1 */
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+::-moz-placeholder {
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  opacity: 1;
+}
+:-moz-placeholder {
+  opacity: 1;
+}

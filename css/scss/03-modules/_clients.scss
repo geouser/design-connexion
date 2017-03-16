@@ -1,0 +1,19 @@
+.clients {
+    padding-bottom: 0;
+}
+
+.clients-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 75px 0;
+
+    .flex-row {
+        @include flex($alignI: center, $justify: space-between);
+        margin: 0 -10px;
+
+        img {
+            margin: 25px 10px;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+         
+.mainHeader {
+    @include position(fixed, 0, 0, auto, 0);
+    width: 100%;
+    @include transition(all, .4s);
+    padding: 20px 0;
+    z-index: 10;
+
+    &.hasScrolled {
+        background-color: #121212;
+    }
+
+    @media (max-width: 1550px) {
+        padding: 10px 0;
+    }
+    
+    background: transparent;
+    
+    .wrapper {
+        height: 100%;
+        @include flex();
+
+        @media (max-width: 1550px) {
+            position: relative;
+        }
+    }
+
+    .multisite-menu {
+        left: 100px;
+        top: 50%;
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        width: 32px;
+        height: 32px;
+
+        .fa {
+            display: block;
+        }
+
+        &:hover {
+            background-color: #EA5B0C;
+        }
+
+        @media (max-width: 1850px) {
+            left: 50px;
+        }
+
+        @media (max-width: 1550px) {
+            left: 10px;
+        }
+    }
+
+    .site-logo {
+        display: block;
+        height: 120px;
+        width: auto;
+        
+        @media (min-width: 1750px) {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            -o-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            width: auto;
+        }
+
+        @media (max-width: 1550px) {
+            margin-left: 60px;
+            height: 80px;
+        }
+    }
+
+    .site-menu-button {
+        display: none;
+    }
+
+    .request {
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #fff;
+        background-color: transparent;
+        border: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 300;
+
+        @media (max-width: 1850px) {
+            right: 50px;
+        }
+
+        @media (max-width: 1550px) {
+            right: 10px;
+            top: 75%;
+        }
+    }
+
+    .socials {
+        @media (min-width: 1750px) {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        @media (max-width: 1550px) {
+            position: absolute;
+            right: 10px;
+            top: 25%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        color: #fff;
+
+
+        a {
+            color: inherit;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 6px;
+            float: left;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #EA5B0C;
+            }
+
+            .fa {
+                display: block;
+            }
+        }
+    }
+}
+
+
+/* ------------------------------------ */
+/*  NAV STYLES  */
+.mainNav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 30px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+
+            @media (max-width: 1550px) {
+                margin: 0 10px;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
