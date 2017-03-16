@@ -1,0 +1,47 @@
+.footer {
+    height: 130px;
+    background-color: #0E1116;
+    color: #fff;
+
+    .flex-row,
+    .wrapper {
+        height: 100%;
+        -webkit-align-items: center;
+                align-items: center;
+    }
+
+    .logo-mini {
+        width: 80px;
+        display: block;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .social {
+        margin-bottom: 25px;
+        color: #fff;
+
+        a {
+            color: inherit;
+            margin: 0 6px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #EA5B0C;
+            }
+        }
+    }
+    .powered {
+        a {
+            color: #FFF;
+            @include transition(all,.2s);
+            &:hover {
+                color: #EA5B0C;
+            }
+        }
+    }
+}
