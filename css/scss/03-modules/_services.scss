@@ -11,6 +11,7 @@
 .services-box {
     width: 1480px;
     max-width: 100%;
+    margin: 0 auto;
     @include flex($alignI:flex-start, $justify: center);
     padding: 0 10px;
 
@@ -64,12 +65,20 @@
             height: 50px;
             text-align: center;
             font-weight: 600;
+            line-height: 25px;
+            font-size: 18px;
             text-transform: uppercase;
             @extend %vertAlign;
             margin-bottom: 10px;
 
+            @media (min-width: 1500px) {
+                padding: 0 20px;
+            }
+            
+
             @media (max-width: 450px) {
                 font-size: 14px;
+                line-height: normal;
                 height: 40px;
             }
 
