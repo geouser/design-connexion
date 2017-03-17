@@ -52,3 +52,7 @@ BrowserMatch "Mozilla/4.[0-9]{2}" force-no-vary
 <ifModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </ifModule>
+
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
