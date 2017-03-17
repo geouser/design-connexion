@@ -12,8 +12,19 @@
         @include flex($alignI: center, $justify: space-between);
         margin: 0 -10px;
 
+        @media (max-width: 1200px) {
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
         img {
             margin: 25px 10px;
+
+            @media (max-width: 1200px) {
+                margin: 20px 10px;
+                max-width: 20%;
+            }
         }
     }
 }

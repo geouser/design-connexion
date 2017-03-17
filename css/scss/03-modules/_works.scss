@@ -11,6 +11,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        display: block;
+        position: relative;
+        text-align: center;
+        z-index: 1;
 
         @media (max-width: 1700px) {
             height: 350px;
@@ -20,67 +24,101 @@
             height: 300px;
         }
 
+        @media (max-width: 1200px) {
+            height: 250px;
+        }
+        @media (max-width: 991px) {
+            height: 220px;
+        }
+
+
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            background-color: #1d1d1b;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .labels {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 300;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            @media (max-width: 991px) {
+                font-size: 42px;
+            }
+            @media (max-height: 767px) {
+                font-size: 32px;
+                text-transform: uppercase;
+            }
+
+            @media (max-height: 600px) {
+                font-size: 24px;
+            }
+        }
+
+        &:hover {
+            &:after {
+                opacity: 0;
+            }
+            .labels {
+                opacity: 0;
+            }
+        }
+
         &.small {
             width: 33.33%;
 
-            a {
-                .labels {
-                    font-weight: 600;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    line-height: 48px;
-                }
-            }
-        }
-
-        a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            text-align: center;
-            z-index: 1;
-
-            &:after {
-                content: '';
+            @media (max-width: 767px) {
                 width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                -webkit-transition: all 0.3s ease;
-                -o-transition: all 0.3s ease;
-                transition: all 0.3s ease;
-                background-color: #1d1d1b;
-                opacity: 0.7;
-                z-index: 1;
+                background-size: auto 100%;
             }
 
             .labels {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                -o-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                z-index: 2;
-                color: #fff;
-                font-size: 48px;
-                font-weight: 300;
-                -webkit-transition: all 0.3s ease;
-                -o-transition: all 0.3s ease;
-                transition: all 0.3s ease;
-            }
+                font-weight: 600;
+                font-size: 18px;
+                text-transform: uppercase;
+                line-height: 48px;
 
-            &:hover {
-                &:after {
-                    opacity: 0;
+                @media (max-height: 1200px) {
+                    line-height: normal;
                 }
-                .labels {
-                    opacity: 0;
+
+                @media (max-height: 991px) {
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+                @media (max-height: 767px) {
+                    font-size: 32px;
+                    font-weight: 300;
+                }
+
+                @media (max-height: 600px) {
+                    font-size: 24px;
                 }
             }
         }
+        
     }
 }

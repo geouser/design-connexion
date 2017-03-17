@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Dreamkiller - Waveless team</title>
+        <title>Design Connexion</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--[if IE]>
         <meta http-equiv="ImageResize" content="no">
         <meta http-equiv="ImageToolbar" content="no">
@@ -27,7 +27,7 @@
         <header class="mainHeader">
             <div class="wrapper">
 
-                <button class="multisite-menu magnific"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button href="#site-nav-popup" class="multisite-menu magnific"><i class="fa fa-bars" aria-hidden="true"></i></button>
 
                 <a href="index.html" class="site-logo"><img src="images/logo.svg" alt=""></a>
 
@@ -47,15 +47,37 @@
                     <a href="#"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
                 </div>
 
-                <button class="magnific request">Send request</button>
+                <button href="#modal-popup" class="magnific request">Send request</button>
 
-                <button class="site-menu-button">
-                    <span>Menu</span>
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
+                <button class="site-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 
             </div><!-- end wrapper -->
         </header><!-- end header -->
+
+
+        <div class="mobile-menu">
+            <button class="close-menu">×</button>
+
+            <a href="index.html" class="site-logo"><img src="images/logo.svg" alt=""></a>
+
+            <nav class="mainNav"><!-- start navigation -->
+                <ul>
+                    <li><a href="#what-we-do" class="active">What we do</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav><!-- end nav -->
+
+            <div class="socials">
+                <a href="#"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+            </div>
+
+            <button class="magnific request">Send request</button>
+        </div>
 
         <!--=================================================================================================-->
                                                     <!-- OFFER SECTION -->
@@ -153,34 +175,22 @@
 
             <div class="portfolio">
                 <div class="work small" style="background-image: url(images/work-1.jpg);">
-                    <a href="images/work-1.jpg">
-                        <div class="labels">Tent Cards/Calendars <br>DL Size Brochures <br>Spiral Books <br>gift boxes</div>
-                    </a>
+                    <div class="labels">Tent Cards/Calendars <br>DL Size Brochures <br>Spiral Books <br>gift boxes</div>
                 </div>
                 <div class="work small" style="background-image: url(images/work-3.jpg);">
-                    <a href="images/work-2.jpg">
-                        <div class="labels">Loyalty Card <br>Flyers <br>Paper Bags</div>
-                    </a>
+                    <div class="labels">Loyalty Card <br>Flyers <br>Paper Bags</div>
                 </div>
                 <div class="work small" style="background-image: url(images/work-2.jpg);">
-                    <a href="images/work-3.jpg">
-                        <div class="labels">Brochures</div>
-                    </a>
+                    <div class="labels">Brochures</div>
                 </div>
                 <div class="work" style="background-image: url(images/work-4.jpg);">
-                    <a href="images/work-3.jpg">
-                        <div class="labels">Indoor and Outdoor Branding</div>
-                    </a>
+                    <div class="labels">Indoor and Outdoor Branding</div>
                 </div>
                 <div class="work" style="background-image: url(images/work-5.jpg);">
-                    <a href="images/work-3.jpg">
-                        <div class="labels">Mall Branding</div>
-                    </a>
+                    <div class="labels">Mall Branding</div>
                 </div>
                 <div class="work" style="background-image: url(images/work-6.jpg);">
-                    <a href="images/work-3.jpg">
-                        <div class="labels">Showroom Branding</div>
-                    </a>
+                    <div class="labels">Showroom Branding</div>
                 </div>
             </div>
         </section>
@@ -233,7 +243,7 @@
                             <p><img src="images/envelope.png" alt=""><a href="mailto: info@dcxn.ae">info@dcxn.ae</a></p>
                         </div>
                         <div class="col-6">
-                            <div class="map" id="map_canvas" data-lat="25" data-lng="55"></div>
+                            <div class="map" id="map_canvas" data-lat="25.0624" data-lng="55.13026"></div>
                         </div>
                     </div>
                 </div>
@@ -285,7 +295,7 @@
                         <p class="copy">2017 © Copyright Brick Connexion Technical Services LLC</p>
                     </div>
                     <div class="col-3">
-                        <div class="powered">Powered by <a href="">Ultra Web</a></div>
+                        <div class="powered">Powered by <a href="http://ultraweb.ae">UltraWeb</a></div>
                     </div>
                 </div>
             </div>
@@ -294,7 +304,40 @@
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+        <div id="site-nav-popup" class="mfp-hide zoom-anim-dialog popup multisite-popup">
+            <a href="http://ultrasmmdubai.com/dev/design/" class="site-link">
+                <span>Design Connexion</span>
+                <img src="images/logo-design.png" alt="">
+            </a>
+            <a href="http://ultrasmmdubai.com/dev/dawall/" class="site-link">
+                <span>Daw'all</span>
+                <img src="images/logo-dawall.png" alt="">
+            </a>
+            <a href="http://ultrasmmdubai.com/dev/brick/" class="site-link">
+                <span>Brick Connexion</span>
+                <img src="images/logo-brick.png" alt="">
+            </a>
+        </div>
+
+        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup">
+            <div class="contact-form">
+                <form action="" class="form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Enter your name" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="name" placeholder="Enter your email" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="name" placeholder="Enter your phone" required="">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button class="button">Send</button>                       
+                </form>
+            </div>
+        </div>
 
         <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Спасибо!</p>

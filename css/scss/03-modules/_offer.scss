@@ -3,6 +3,7 @@
     max-height: 100%;
     padding-bottom: 0;
     min-height: 550px;
+    position: relative;
     @include flex($direction: column, $alignI: center, $justify: center);
     
     background-image: url("../images/offer-main.jpg");
@@ -22,6 +23,22 @@
 
         @media (max-width: 1550px) {
             font-size: 40px;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 26px;
         }
     }
 
@@ -54,6 +71,11 @@
 
         @media (max-width: 1550px) {
             width: 25px;
+            bottom: 40px;
+        }
+        @media (max-width: 767px) {
+            width: 22px;
+            bottom: 30px;
         }
 
         img {

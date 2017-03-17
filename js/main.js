@@ -85,6 +85,16 @@ jQuery(document).ready(function($) {
             }
     });
 
+    $('.site-menu-button').on('click', function(event) {
+        event.preventDefault();
+        $('.mobile-menu').addClass('active');
+    });
+
+    $('.close-menu').on('click', function(event) {
+        event.preventDefault();
+        $('.mobile-menu').removeClass('active');
+    });
+
 
 
     /*---------------------------
@@ -349,7 +359,7 @@ jQuery(document).ready(function($) {
 
         var mapOptions = {
             center: mapCenterCoord,
-            zoom: 14,
+            zoom: 15,
             //draggable: false,
             disableDefaultUI: true,
             scrollwheel: false,

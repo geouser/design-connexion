@@ -10,9 +10,26 @@
                 align-items: center;
     }
 
+    @media (max-width: 767px) {
+        font-size: 13px;
+        height: 100px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 12px;
+
+        [class*='col-'] {
+            padding: 0 5px;
+        }
+    }
+
     .logo-mini {
         width: 80px;
         display: block;
+
+        @media (max-width: 767px) {
+            width: 50px;
+        }
 
         img {
             width: 100%;
@@ -22,6 +39,10 @@
     .social {
         margin-bottom: 25px;
         color: #fff;
+
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
 
         a {
             color: inherit;
@@ -36,6 +57,7 @@
         }
     }
     .powered {
+        text-align: right;
         a {
             color: #FFF;
             @include transition(all,.2s);
